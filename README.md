@@ -20,6 +20,13 @@ Jetbrains plugin have a tendency to switch to "Auto" from time to time (Auto = l
 
 That's it. for now.
 
+## Problems found so far
+
+- Offline mode make the jetbrains plugin tricky to use
+- The jetbrains plugin keep reverting back to "auto" (cloud based Claude) after every prompt
+- Despite providing 001/main.py as a context, the model keep creating a /main.py, which is the wrong file. Worse, sometimes it try to patch it (even when it doesn't exist)
+- Not sure if this is a plugin issue or a model issue.
+
 ----
 
 ## Anything below is AI generated
