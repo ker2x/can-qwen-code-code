@@ -27,6 +27,10 @@ That's it. for now.
 - Despite providing 001/main.py as a context, the model keep creating a /main.py, which is the wrong file. Worse, sometimes it try to patch it (even when it doesn't exist)
 - Not sure if this is a plugin issue or a model issue.
 
+## i'm stuck
+
+The fact that it can't edit the right file is a critical issue. I'm kind of stuck here :(
+
 ----
 
 ## Anything below is AI generated
