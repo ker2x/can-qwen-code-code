@@ -29,7 +29,8 @@ That's it. for now.
 
 ## i'm stuck
 
-The fact that it can't edit the right file is a critical issue. I'm kind of stuck here :(
+- The fact that it can't edit the right file is a critical issue. I'm kind of stuck here :(
+- okay, if i create the file myself (eg 002/main.py) i can work around the problem. I'll make do with it. I need to give it specific instruction as well to make sure it work on the right file
 
 ----
 
