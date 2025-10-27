@@ -12,7 +12,7 @@ Let's see how it goes.
 - As for now the context size is set to 20k token.
 - It use all the VRAM + 3GB of GTT.
 
-I'll make it simple. Each test is in its own numbered (by chronological order) directory.
+~~I'll make it simple. Each test is in its own numbered (by chronological order) directory.~~
 No idea what i'll code yet. But generating it will be slow :)
 
 I'm in "offline mode" (for the AI) to make sure that it doesn't access the cloud.
@@ -31,6 +31,7 @@ That's it. for now.
 
 - The fact that it can't edit the right file is a critical issue. I'm kind of stuck here :(
 - okay, if i create the file myself (eg 002/main.py) i can work around the problem. I'll make do with it. I need to give it specific instruction as well to make sure it work on the right file
+- i removed the directory based structure to see if it's better
 
 ----
 
