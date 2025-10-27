@@ -12,6 +12,12 @@ Let's see how it goes.
 - As for now the context size is set to 20k token.
 - It use all the VRAM + 3GB of GTT.
 
+I'll make it simple. Each test is in its own numbered (by chronological order) directory.
+No idea what i'll code yet. But generating it will be slow :)
+
+I'm in "offline mode" (for the AI) to make sure that it doesn't access the cloud.
+Jetbrains plugin have a tendency to switch to "Auto" from time to time (Auto = latest version of cloude based Claude)
+
 That's it. for now.
 
 ----
