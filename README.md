@@ -33,6 +33,12 @@ That's it. for now.
 - okay, if i create the file myself (eg 002/main.py) i can work around the problem. I'll make do with it. I need to give it specific instruction as well to make sure it work on the right file
 - i removed the directory based structure to see if it's better
 
+## switching to vscode
+
+- It is sad, but jetbrains ai assistant have trouble giving proper instruction to anything but claude.
+- or the models fail to understand the instructions. doesn't matter
+- I switched to vscode (that i dislike) and continue.dev. i have less interaction issue beetween the plugin and the model
+
 ----
 
 ## Anything below is AI generated
