@@ -31,26 +31,50 @@ TRAIL_COLORS = [
 TEXT_COLOR = (200, 200, 220)
 
 # Physics parameters
-G = 9.81
-L1, L2 = 150, 150
-M1, M2 = 20, 20
+G = 9.81  # Acceleration due to gravity
+L1, L2 = 150, 150  # Lengths of the two pendulum rods
+M1, M2 = 20, 20  # Masses of the two pendulum bobs
 
 # Clock for controlling frame rate
 clock = pygame.time.Clock()
 
 
 class Pendulum:
+    """
+    A class representing a double pendulum system.
+    
+    This class implements the physics of a double pendulum using the Lagrangian
+    approach to calculate the equations of motion. It tracks the angular positions
+    and velocities of both pendulum arms and maintains a visual trail of the
+    motion.
+    """
+    
     def __init__(self, theta1, theta2, color_idx=0):
+        """
+        Initialize a double pendulum with given initial angles.
+        
+        Args:
+            theta1 (float): Initial angle of the first pendulum arm (in radians)
+            theta2 (float): Initial angle of the second pendulum arm (in radians)
+            color_idx (int): Index for selecting color from color palette
+        """
         self.theta1 = theta1
         self.theta2 = theta2
-        self.theta1_dot = 0
-        self.theta2_dot = 0
+        self.theta1_dot = 0  # Angular velocity of first pendulum arm
+        self.theta2_dot = 0  # Angular velocity of second pendulum arm
         self.color_idx = color_idx
         self.trail = []
         self.max_trail_length = 500
 
     def update(self):
-        # Calculate derivatives using equations of motion for double pendulum
+        """
+        Update the pendulum's state using the equations of motion.
+        
+        This method calculates the angular accelerations using the Lagrangian
+        approach and updates the angular velocities and positions accordingly.
+        It also maintains the trail of the pendulum's motion.
+        """
+        # Time step for numerical integration
         dt = 0.05
 
         # More accurate equations of motion for double pendulum
@@ -88,6 +112,12 @@ class Pendulum:
             self.trail.pop(0)
 
     def draw(self, surface):
+        """
+        Draw the pendulum on the given surface.
+        
+        Args:
+            surface: Pygame surface to draw on
+        """
         # Calculate positions
         x1 = L1 * math.sin(self.theta1)
         y1 = L1 * math.cos(self.theta1)
@@ -120,6 +150,13 @@ class Pendulum:
 
 
 def main():
+    """
+    Main function to run the double pendulum simulation.
+    
+    This function initializes the pendulum systems with slightly different
+    initial conditions to demonstrate chaotic behavior, handles user input,
+    and manages the main simulation loop.
+    """
     # Create multiple pendulums with slightly different initial conditions
     # Initial conditions with pendulums hanging vertically up (pi/2 = 90 degrees)
     pendulums = []
